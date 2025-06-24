@@ -148,3 +148,83 @@ button:disabled {
 .read-the-docs {
   color: #888;
 }
+
+.guess-form {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.guess-input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.guess-input.correct {
+  border: 2px solid #4caf50;
+  background: #e8f5e9;
+}
+
+.guess-input.incorrect {
+  border: 2px solid #f44336;
+  background: #ffebee;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.feedback.correct {
+  color: #4caf50;
+}
+
+.feedback.incorrect {
+  color: #f44336;
+}
+
+.hint {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.nav-btn {
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn.disabled,
+.nav-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
